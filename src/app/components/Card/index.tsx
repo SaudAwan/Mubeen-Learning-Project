@@ -29,7 +29,7 @@ const Card = ({ imageSrc, title, details }: Props) => {
         </div>
 
         {/* Title */}
-        <h2 className="font-semibold text-xl text-gray-800 mb-4 text-center w-full">
+        <h2 className="md:text-base lg:font-semibold lg:text-xl text-black mb-4 text-center w-full">
           {title}
         </h2>
 
@@ -43,12 +43,12 @@ const Card = ({ imageSrc, title, details }: Props) => {
                 width={20}
                 height={20}
               />
-              <p className="font-semibold text-black flex-1">{detail.label}:</p>
-              <p className="text-black text-base font-light">{detail.value}</p>
+              <p className="font-semibold text-black flex-1 lg:text-base md:text-sm">{detail.label}:</p>
+              <p className="text-black lg:text-base md:text-sm font-light">{detail.value}</p>
             </div>
           ))}
                     <div className="flex items-center justify-center flex-col gap-y-5 pt-3">
-                        <div className="border-b-2 brder-[#DEE2E6] w-[100%]"/>
+                        <div className="border-b-2 border-[#DEE2E6] w-[100%]"/>
                         <SimpleButton text={"Reserve Seat"} color={"yellow"} textColor={"black"} />
                         </div>
                 </div>

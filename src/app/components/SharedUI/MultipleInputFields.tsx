@@ -1,10 +1,10 @@
 import React from "react";
-import Search from "../../../public/Search-white.svg"
-import Plane from "../../../public/Plane.svg"
-import Departure from "../../../public/DepartureDate.svg"
-import Return from "../../../public/ReturnDate.svg"
-import Passenger from "../../../public/Passenger.svg"
-import Class from "../../../public/Passenger.svg"
+import Search from "../../../../public/Search-white.svg"
+import Plane from "../../../../public/Plane.svg"
+import Departure from "../../../../public/DepartureDate.svg"
+import Return from "../../../../public/ReturnDate.svg"
+import Passenger from "../../../../public/Passenger.svg"
+import Class from "../../../../public/Passenger.svg"
 import IconInputfield from "./IconInputField"
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ interface MultipleInputFieldsProps {
 const MultipleInputFields: React.FC<MultipleInputFieldsProps> = () => {
   return (
     <>
-      <div className="lg:mt-[15px] md:mt-[5px] grid grid-cols-2 gap-y-3">
+      <div className="lg:mt-[15px] md:mt-[5px] grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-y-3">
         <IconInputfield text={"From"} icon={Plane} />
         <IconInputfield text={"To"} icon={Plane} />
         <IconInputfield text={"Departure Date"} icon={Departure} />

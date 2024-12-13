@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import Home from "../../../public/Home.svg"
-import Dashboard from "../../../public/Dashboard.svg"
-import MarketPlace from "../../../public/MarketPlace.svg"
-import FBO from "../../../public/BlackPlane.svg"
+import Home from "../../../../public/Home.svg"
+import Dashboard from "../../../../public/Dashboard.svg"
+import MarketPlace from "../../../../public/MarketPlace.svg"
+import FBO from "../../../../public/BlackPlane.svg"
 
 type Props = {}
 

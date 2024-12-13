@@ -1,5 +1,7 @@
+"use client"
+
 import React from "react";
-import i from "../../../public/i.svg";
+import i from "../../../../public/i.svg";
 import InputField from "../SharedUI/InputField";
 import MultipleInputFields from "../SharedUI/MultipleInputFields";
 import Image from "next/image";

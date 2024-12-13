@@ -1,11 +1,11 @@
 "use client";
 
-import Card from "./Card";
-import Plane1 from "../../../public/Plane 1.svg";
-import DepartureDate from "../../../public/DepartureDateBlack.svg";
-import Chair from "../../../public/ChairBlack.svg";
-import PlaneBlack from "../../../public/PlaneBlack.svg";
-import Map from "../../../public/Map.svg";
+import Card from "../Card";
+import Plane1 from "../../../../public/Plane 1.svg";
+import DepartureDate from "../../../../public/DepartureDateBlack.svg";
+import Chair from "../../../../public/ChairBlack.svg";
+import PlaneBlack from "../../../../public/PlaneBlack.svg";
+import Map from "../../../../public/Map.svg";
 import Image from "next/image";
 
 type Props = {};
