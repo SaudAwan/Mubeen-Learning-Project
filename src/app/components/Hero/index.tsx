@@ -33,7 +33,7 @@ const Hero = (props: Props) => {
         <div className="sm:w-[50%] flex justify-center">
           <Image src={Image2} width={0} height={0} alt="Business Class" className="lg:w-[760px] lg:h-[600px] md:w-[560px] md:h-[450px] sm:w-[90%] sm:h-auto" />
         </div>
-        <div className="flex flex-col items-start justify-center lg:w-[50%] md:w-[45%] lg:px-[10%] md:px-[3%] px-[5%] md:pb-0 pb-[8%] lg:gap-y-4 md:gap-y-2 gap-y-3">
+            <div className="flex flex-col items-start justify-center lg:w-[50%] md:w-[45%] lg:px-[10%] md:px-[3%] px-[5%] md:pb-0 pb-[8%] lg:gap-y-4 md:gap-y-2 gap-y-3">
           <h2 className="lg:text-2xl font-semibold md:text-base sm:text-xl ml-2">Why Use Swoop for your private jet travel?</h2>
           <p className="lg:text-base lg:font-normal md:text-xs text-sm">Most jets fly only at 25% passenger capacity. Most jet charterers like this concept because of the following:</p>
 

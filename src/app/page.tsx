@@ -21,8 +21,6 @@ export default function Home() {
       <BlackComponent2/>
       <FAA />
       <Footer/>
-      
-
    </div>
   );
 }
