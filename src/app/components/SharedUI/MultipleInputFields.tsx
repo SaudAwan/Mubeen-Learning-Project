@@ -4,7 +4,7 @@ import Plane from "../../../../public/Plane.svg"
 import Departure from "../../../../public/DepartureDate.svg"
 import Return from "../../../../public/ReturnDate.svg"
 import Passenger from "../../../../public/Passenger.svg"
-import Class from "../../../../public/Passenger.svg"
+import Class from "../../../../public/Class.svg"
 import IconInputfield from "./IconInputField"
 import Image from "next/image";
 

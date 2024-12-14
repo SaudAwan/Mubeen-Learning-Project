@@ -7,7 +7,7 @@ interface SimpleButtonProps {
   textColor: "white" | "black" | "gray"; // Limit options to specific text color values
 }
 
-const SimpleButton: React.FC<SimpleButtonProps> = ({ color, text, textColor }) => {
+const SimpleButton: React.FC<SimpleButtonProps> = ({ color, text, textColor, onClick }) => {
   const bgColor = {
     yellow: "bg-[#FED130]",
     white: "bg-white",
@@ -21,7 +21,7 @@ const SimpleButton: React.FC<SimpleButtonProps> = ({ color, text, textColor }) =
   }[textColor];
 
   return (
-    <button
+    <button onClick={onClick}
       className={`${bgColor} ${textClass} py-[14px] px-[24px] rounded-[6px] hidden md:flex`}
     >
       {text}
