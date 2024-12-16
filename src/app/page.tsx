@@ -14,15 +14,15 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <TabletHeader />
+      <TabletHeader/>
       <FindFlight />
-      <Flights />
+      <Flights/>
       <Leader />
       <BlackComponent />
       <Hero />
-      <BlackComponent2 />
+      <BlackComponent2/>
       <FAA />
-      <Footer />
-    </div>
+      <Footer/>
+   </div>
   );
 }
