@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import FlightDetails from "./components/FlightsDetails";
-import Header from "./components/Header";
-import FindFlight from "../components/FindFlight";
-import SkyBound from "./components/SkyBound";
-import Footer from "../components/Footer";
+import FlightDetails from "@/components/Pages/User/HomePage/SearchResults/FlightsDetails";
+import Header from "@/components/Header";
+import FindFlight from "@/components/FindFlight";
+import SkyBound from "@/components/Pages/User/HomePage/SearchResults/SkyBound";
+import Footer from "@/components/Footer";
 
 type Props = {};
 

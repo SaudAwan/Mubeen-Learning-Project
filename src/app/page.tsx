@@ -1,14 +1,14 @@
-"use client";
-import FindFlight from "./components/FindFlight/index";
-import Leader from "./components/Leader/index";
-import BlackComponent from "./components/BlackComponent/index";
-import Hero from "./components/Hero/index";
-import BlackComponent2 from "./components/BlackComponent2/index";
-import FAA from "./components/FAA/index";
-import Footer from "./components/Footer/index";
-import Flights from "./components/Flights/index";
-import TabletHeader from "./components/TabletHeader/index";
-import Header from "./components/Header";
+"use client"
+import FindFlight from "@/components/FindFlight";
+import Leader from "@/components/Leader";
+import BlackComponent from "@/components/BlackComponent";
+import Hero from "@/components/Hero";
+import BlackComponent2 from "@/components/BlackComponent2";
+import FAA from "@/components/FAA";
+import Footer from "@/components/Footer";
+import Flights from "@/components/Flights";
+import TabletHeader from "@/components/TabletHeader";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
