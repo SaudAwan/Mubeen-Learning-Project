@@ -6,10 +6,11 @@ import Chair from "@/../public/ChairBlack.svg";
 import Circle from "@/../public/Vector.svg";
 import Plane from "@/../public/PlaneBlack.svg";
 import Tick from "@/../public/Tick.svg";
-import SimpleButton from "@/components/SharedUI/Buttons/SimpleButton"
+import SimpleButton from "@/components/SharedUI/Buttons/SimpleButton";
 import DeetImage2 from "@/../public/DeetImage.svg";
 
 const FlightDetailCard = () => {
+  const Function = () => {};
   return (
     <div className="flex md:flex-row flex-col items-center gap-x-4 md:p-5 p-3 border-[1px] border-[#DEE2E6] rounded-lg">
       <div className="md:flex flex-row items-center hidden">
@@ -37,7 +38,7 @@ const FlightDetailCard = () => {
               <h1 className="font-semibold md:text-xl text-xs text-center">
                 Islamabad, Pakistan TO Karachi, Pakistan
               </h1>
-              <div className="md:flex lg:w-[60%] md:w-[90%] md:px-[2%] lg:px-0 items-center justify-between grid grid-cols-2 gap-x-4 gap-y-1 md:mt-0 md:hidden">
+              <div className="lg:w-[60%] md:w-[90%] md:px-[2%] lg:px-0 items-center justify-between grid grid-cols-2 gap-x-4 gap-y-1 md:mt-0 md:hidden">
                 <div className="flex flex-col  items-center justify-center">
                   <div className="flex gap-2">
                     <Image
@@ -102,7 +103,7 @@ const FlightDetailCard = () => {
             </div>
           </div>
           <div className="flex md:flex-row flex-col justify-between">
-            <div className="md:flex lg:w-[60%] md:w-[90%] md:px-[2%] lg:px-0 items-center justify-between grid grid-cols-2 gap-1 hidden">
+            <div className="md:flex lg:w-[60%] md:w-[90%] md:px-[2%] lg:px-0 items-center justify-between grid-cols-2 gap-1 hidden">
               <div className="flex flex-col  items-center justify-center">
                 <div className="flex gap-2">
                   <Image
@@ -168,6 +169,7 @@ const FlightDetailCard = () => {
                 textColor="black"
                 color="yellow"
                 text="View Details"
+                onClick={Function}
               />
             </div>
           </div>
@@ -186,6 +188,7 @@ const FlightDetailCard = () => {
               textColor="black"
               color="yellow"
               text="View Details"
+              onClick={Function}
             />
             <div className="md:flex flex-col justify-center items-center">
               <p className="md:font-normal md:text-sm text-xs">Seat Price</p>

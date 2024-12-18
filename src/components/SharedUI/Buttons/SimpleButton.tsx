@@ -5,6 +5,7 @@ interface SimpleButtonProps {
   color: "yellow" | "white" | "black"; // Limit options to specific color values
   text: string;
   textColor: "white" | "black" | "gray"; // Limit options to specific text color values
+  onClick: VoidFunction;
 }
 
 const SimpleButton: React.FC<SimpleButtonProps> = ({

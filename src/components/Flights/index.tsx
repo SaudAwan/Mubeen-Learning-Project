@@ -9,9 +9,7 @@ import Map from "@/../public/Map.svg";
 import Map2 from "@/../public/MapMobile.svg";
 import Image from "next/image";
 
-type Props = {};
-
-const Flights = (props: Props) => {
+const Flights = () => {
   const flightDetails = [
     {
       iconSrc: DepartureDate,

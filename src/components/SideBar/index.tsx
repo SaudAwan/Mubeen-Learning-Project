@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import profileImage from "@/../public/user-avatar.svg"// Replace with your image
+import profileImage from "@/../public/user-avatar.svg";
 import {
   Home,
   Dashboard,

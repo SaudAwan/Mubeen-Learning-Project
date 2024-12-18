@@ -2,6 +2,7 @@ import React from "react";
 
 interface Heading2Props {
   text: string;
+  className: string;
 }
 
 const Heading2: React.FC<Heading2Props> = ({ text }) => {

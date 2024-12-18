@@ -2,9 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from "@/../public/Group.svg"
 
-type Props = {}
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
       <div className='bg-black text-white flex md:flex-row flex-col md:px-[0] px-4 justify-between items-center py-8 md:gap-y-0 gap-y-4'>
           <div className='flex flex-col md:w-[30%] w-full md:px-[1%] px-[0] md:ml-20 justify-center items-start gap-y-5'>

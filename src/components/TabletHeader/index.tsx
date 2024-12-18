@@ -5,9 +5,8 @@ import Dashboard from "@/../public/Dashboard.svg"
 import MarketPlace from "@/../public/MarketPlace.svg"
 import FBO from "@/../public/BlackPlane.svg"
 
-type Props = {}
 
-const TabletHeader = (props: Props) => {
+const TabletHeader = () => {
   return (
     // Make it hidden on small and large screens, visible on medium screens
     <div className='hidden sm:block lg:hidden md:flex bg-black text-white justify-between items-center px-[7%] py-[10px] gap-4'>

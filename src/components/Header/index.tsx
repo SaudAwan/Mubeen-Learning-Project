@@ -8,9 +8,15 @@ import Image from "next/image";
 import MenuIcon from "@mui/icons-material/Menu";
 import SideBar from "../SideBar";
 import Bell from "@/../public/Bell.svg";
-import Avatar from "@/../public/user-avatar.svg"
+import Avatar from "@/../public/user-avatar.svg";
+import TabletHeader from "../TabletHeader";
 
 const Header: React.FC = () => {
+
+  const scrollToSectionById = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isLogin, setIsLogin] = useState(false); // State for login/logout
 
@@ -70,11 +76,22 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation Links */}
         <ul className="hidden lg:flex items-center lg:gap-5 md:gap-3 font-normal text-[#BBBBBB]">
-          <li>Home</li>
-          <li>About us</li>
-          <li>How it works</li>
-          <li>Why use Swoop</li>
-          <li>Our Mission</li>
+          {!isLogin ? (
+            <>
+              <li  className="cursor-pointer">Home</li>
+              <li onClick={() => scrollToSectionById("Leader")}  className="cursor-pointer">About us</li>
+              <li onClick={() => scrollToSectionById("How it Works")} className="cursor-pointer">How it works</li>
+              <li onClick={() => scrollToSectionById("Hero")}  className="cursor-pointer">Why use Swoop</li>
+              <li onClick={() => scrollToSectionById("Our Mission")}  className="cursor-pointer">Our Mission</li>
+            </>
+          ) : (
+            <>
+              <li className="cursor-pointer">Home</li>
+              <li className="cursor-pointer">Dashboard</li>
+              <li className="cursor-pointer">Marketplace</li>
+              <li className="cursor-pointer">FBO Flights</li>
+            </>
+          )}
           <li className="flex gap-[9px] text-[#BBBBBB]">
             <div className="relative flex items-center justify-center">
               <input
@@ -125,6 +142,7 @@ const Header: React.FC = () => {
           )}
         </div>
       </nav>
+      <TabletHeader />
 
       {/* Sidebar Component */}
       {isSidebarOpen && <SideBar closeSidebar={toggleSidebar} />}

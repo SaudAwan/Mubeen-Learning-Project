@@ -6,7 +6,7 @@ const InputField: React.FC = () => {
   return (
     <div className="mt-4 flex flex-col sm:flex-row gap-2 sm:gap-0">
       <input
-        className="w-full sm:w-auto flex-grow py-2 md:py-3 px-3 md:px-4 rounded-md border border-black text-sm sm:text-base md:text-lg"
+        className="w-full sm:w-auto flex-grow py-2 md:py-3 px-3 md:px-4 rounded-sm border border-black text-sm sm:text-base md:text-lg outline-none"
         type="text"
         placeholder="Departing From"
       />

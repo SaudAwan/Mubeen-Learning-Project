@@ -1,8 +1,9 @@
-import Women from "@/../public/Women.svg"
+import Women from "@/../public/Women.svg";
 import Image from "next/image";
 import SimpleButton from "@/components/SharedUI/Buttons/SimpleButton";
 
-const SkyBound = (props: Props) => {
+const SkyBound = () => {
+  const Function = () => {};
   return (
     <div className="relative">
       <Image
@@ -24,6 +25,7 @@ const SkyBound = (props: Props) => {
             text="Book a Chapter"
             color="yellow"
             textColor="black"
+            onClick={Function}
           />
         </div>
       </div>

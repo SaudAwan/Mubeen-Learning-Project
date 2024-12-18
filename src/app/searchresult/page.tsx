@@ -7,9 +7,7 @@ import FindFlight from "@/components/FindFlight";
 import SkyBound from "@/components/Pages/User/HomePage/SearchResults/SkyBound";
 import Footer from "@/components/Footer";
 
-type Props = {};
-
-const page = (props: Props) => {
+const page = () => {
   return (
     <div>
       <Header />

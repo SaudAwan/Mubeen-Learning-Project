@@ -8,11 +8,8 @@ import Class from "@/../public/Class.svg"
 import IconInputfield from "./IconInputField"
 import Image from "next/image";
 
-interface MultipleInputFieldsProps {
-  // Define any props if necessary
-}
 
-const MultipleInputFields: React.FC<MultipleInputFieldsProps> = () => {
+const MultipleInputFields = () => {
   return (
     <>
       <div className="lg:mt-[15px] md:mt-[5px] grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-y-3">
