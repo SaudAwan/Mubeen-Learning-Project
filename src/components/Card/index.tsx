@@ -14,7 +14,9 @@ type Props = {
 };
 
 const Card = ({ imageSrc, title, details }: Props) => {
-    return (
+  const doNothing = () => {};
+
+  return (
     <div className="flex items-center justify-center">
       <div className="border border-gray-300 flex flex-col items-start p-6 rounded-lg w-[320px] bg-white shadow-md">
         {/* Image */}
@@ -43,20 +45,25 @@ const Card = ({ imageSrc, title, details }: Props) => {
                 width={20}
                 height={20}
               />
-              <p className="font-semibold text-black flex-1 lg:text-base md:text-sm">{detail.label}:</p>
-              <p className="text-black lg:text-base md:text-sm font-light">{detail.value}</p>
+              <p className="font-semibold text-black flex-1 lg:text-base md:text-sm">
+                {detail.label}:
+              </p>
+              <p className="text-black lg:text-base md:text-sm font-light">
+                {detail.value}
+              </p>
             </div>
           ))}
-                    <div className="flex items-center justify-center flex-col gap-y-5 pt-3">
-                        <div className="border-b-2 border-[#DEE2E6] w-[100%]"/>
-                        <SimpleButton text={"Reserve Seat"} color={"yellow"} textColor={"black"} />
-                        </div>
-                </div>
-              
-               
-                
-            </div>
-            
+          <div className="flex items-center justify-center flex-col gap-y-5 pt-3">
+            <div className="border-b-2 border-[#DEE2E6] w-[100%]" />
+            <SimpleButton
+              text={"Reserve Seat"}
+              color={"yellow"}
+              textColor={"black"}
+              onClick={doNothing}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
